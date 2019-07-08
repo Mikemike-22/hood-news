@@ -55,7 +55,7 @@ The different technologies that were used to develop this program include:
 ```
 
 ### Link to live site
-Here is a link to the live site 
+Here is a link to the live site https://thehoodnews.herokuapp.com/ 
 ### Contact Me
 Contact me on my email for any suggestions or changes mikor22@gmail.com
 ### License  & Copyright information
