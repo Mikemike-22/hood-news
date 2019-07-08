@@ -9,7 +9,8 @@ from .forms import *
 @login_required(login_url='/accounts/login/')
 def home(request):
 
-    current_user = request.user    
+    current_user = request.user 
+       
     profile = Profile.objects.filter(prof_user=request.user)
     hoodie = Neighborhood.objects.all()
     arr=[]
