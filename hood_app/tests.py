@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from .models import *
 
 class ProfileTestClass(TestCase):
+
     def setUp(self):
         self.new_user = User.objects.create_user(username='user',password='password')
         self.new_profile = Profile(id=1,prof_user=self.new_user,user_location='Turkana')
@@ -21,6 +22,7 @@ class ProfileTestClass(TestCase):
         self.assertTrue(len(profiles) == 0)
 
 class NeighbourhoodTestClass(TestCase):
+
     def setUp(self):
         self.new_hood = Neighborhood(id=1,hood_name='Mtaani',hood_location="Nairobi",occupants=10)
     
@@ -49,6 +51,7 @@ class NeighbourhoodTestClass(TestCase):
         self.assertEqual(neighborhood.hood_name,'Updated Mtaa')
 
 class BusinessTestClass(TestCase):
+
     def setUp(self):
         self.new_user = User.objects.create_user(username='user',password='password')
         self.new_hood = Neighborhood(id=1,hood_name='Mtaani',hood_location="Nairobi",occupants=10)
@@ -81,6 +84,7 @@ class BusinessTestClass(TestCase):
 
 
 class PostTestClass(TestCase):
+    
     def setUp(self):
         self.new_user = User.objects.create_user(username='user',password='password')
         self.new_hood = Neighborhood(id=1,hood_name='Mtaani',hood_location="Nairobi",occupants=10)
